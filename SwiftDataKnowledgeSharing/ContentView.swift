@@ -1,24 +1,23 @@
-//
-//  ContentView.swift
-//  SwiftDataKnowledgeSharing
-//
-//  Created by Tom Reinhardt on 31.10.23.
-//
-
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
+    @Query var allAnimals: [Animal]
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            List {
+                ForEach(allAnimals) { animal in
+                    HStack {
+                        Text(animal.name)
+                        Text("\(animal.age)")
+                        Spacer()
+                        Text(animal.type.localizedString)
+                    }
+                    .padding()
+                }
+            }
+            .padding()
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

@@ -11,6 +11,7 @@
 		EDD5B6CE2AF16AFF009CE2CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5B6CD2AF16AFF009CE2CC /* ContentView.swift */; };
 		EDD5B6D02AF16B01009CE2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD5B6CF2AF16B01009CE2CC /* Assets.xcassets */; };
 		EDD5B6D32AF16B01009CE2CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD5B6D22AF16B01009CE2CC /* Preview Assets.xcassets */; };
+		EDD5B6DA2AF16B7D009CE2CC /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5B6D92AF16B7D009CE2CC /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		EDD5B6CD2AF16AFF009CE2CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDD5B6CF2AF16B01009CE2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDD5B6D22AF16B01009CE2CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDD5B6D92AF16B7D009CE2CC /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		EDD5B6CA2AF16AFF009CE2CC /* SwiftDataKnowledgeSharing */ = {
 			isa = PBXGroup;
 			children = (
+				EDD5B6D92AF16B7D009CE2CC /* Animal.swift */,
 				EDD5B6CB2AF16AFF009CE2CC /* SwiftDataKnowledgeSharingApp.swift */,
 				EDD5B6CD2AF16AFF009CE2CC /* ContentView.swift */,
 				EDD5B6CF2AF16B01009CE2CC /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			files = (
 				EDD5B6CE2AF16AFF009CE2CC /* ContentView.swift in Sources */,
 				EDD5B6CC2AF16AFF009CE2CC /* SwiftDataKnowledgeSharingApp.swift in Sources */,
+				EDD5B6DA2AF16B7D009CE2CC /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

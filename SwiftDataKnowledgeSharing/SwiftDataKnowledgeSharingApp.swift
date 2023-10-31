@@ -1,11 +1,5 @@
-//
-//  SwiftDataKnowledgeSharingApp.swift
-//  SwiftDataKnowledgeSharing
-//
-//  Created by Tom Reinhardt on 31.10.23.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
 struct SwiftDataKnowledgeSharingApp: App {
@@ -13,5 +7,6 @@ struct SwiftDataKnowledgeSharingApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Animal.self)
     }
 }
