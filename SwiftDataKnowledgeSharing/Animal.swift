@@ -22,18 +22,18 @@ class Animal: Identifiable {
     static func randomAnimal() -> Animal {
         switch Int.random(in: 0..<4) {
         case 0:
-            return Animal(name: "Alice", age: 5, type: .fish)
+            return Animal(name: "Alice", age: Int.random(in: 1...100), type: .fish)
         case 1:
-            return Animal(name: "Bob", age: 20, type: .bird)
+            return Animal(name: "Bob", age: Int.random(in: 1...100), type: .bird)
         case 2:
-            return Animal(name: "Mallory", age: 3, type: .mammal)
+            return Animal(name: "Mallory", age: Int.random(in: 1...100), type: .mammal)
         default:
             return Animal(name: "foo", age: Int.random(in: 1...100), type: .amphibian)
         }
     }
 }
 
-enum AnimalType: String, Codable {
+enum AnimalType: Int, Codable {
     case bird
     case mammal
     case amphibian
