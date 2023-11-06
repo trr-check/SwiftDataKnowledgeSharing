@@ -18,6 +18,19 @@ class Animal: Identifiable {
     var id: String {
         uuid
     }
+    
+    static func randomAnimal() -> Animal {
+        switch Int.random(in: 0..<4) {
+        case 0:
+            return Animal(name: "Alice", age: 5, type: .fish)
+        case 1:
+            return Animal(name: "Bob", age: 20, type: .bird)
+        case 2:
+            return Animal(name: "Mallory", age: 3, type: .mammal)
+        default:
+            return Animal(name: "foo", age: Int.random(in: 1...100), type: .amphibian)
+        }
+    }
 }
 
 enum AnimalType: String, Codable {

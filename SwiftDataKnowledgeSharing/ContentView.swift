@@ -3,6 +3,7 @@ import SwiftData
 
 struct ContentView: View {
     @Query var allAnimals: [Animal]
+    @Environment(\.modelContext) var modelContext
     
     var body: some View {
         VStack {
@@ -15,9 +16,23 @@ struct ContentView: View {
                         Text(animal.type.localizedString)
                     }
                     .padding()
+                    .swipeActions {
+                        Button {
+                            modelContext.delete(animal)
+                        } label: {
+                            Label("delete", systemImage: "trash")
+                        }
+                    }
                 }
             }
             .padding()
+            
+            Button {
+                modelContext.insert(Animal.randomAnimal())
+            } label: {
+                Text("new animal")
+            }
+            .buttonStyle(BorderedButtonStyle())
         }
     }
 }
