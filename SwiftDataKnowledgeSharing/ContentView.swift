@@ -35,6 +35,13 @@ struct ContentView: View {
                 Text("new animal")
             }
             .buttonStyle(BorderedButtonStyle())
+            
+            Button {
+                showOverlay = true
+            } label: {
+                Text("show sheet")
+            }
+            .buttonStyle(BorderedButtonStyle())
         }
         .sheet(isPresented: $showOverlay) {
             Overlay()
