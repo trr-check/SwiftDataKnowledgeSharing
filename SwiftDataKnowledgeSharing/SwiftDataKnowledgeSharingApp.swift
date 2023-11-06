@@ -7,6 +7,6 @@ struct SwiftDataKnowledgeSharingApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: Animal.self)
+        .modelContainer(GlobalObjects.modelContainer)
     }
 }

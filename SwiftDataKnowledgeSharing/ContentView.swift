@@ -2,8 +2,10 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Query(filter: #Predicate<Animal> { animal in animal.happiness >= 0.02 }, animation: .bouncy) var allAnimals: [Animal]
+    @Query(animation: .bouncy) var allAnimals: [Animal]
     @Environment(\.modelContext) var modelContext
+    
+    @State var showOverlay: Bool = false
     
     var body: some View {
         VStack {
@@ -33,6 +35,9 @@ struct ContentView: View {
                 Text("new animal")
             }
             .buttonStyle(BorderedButtonStyle())
+        }
+        .sheet(isPresented: $showOverlay) {
+            Overlay()
         }
     }
 }

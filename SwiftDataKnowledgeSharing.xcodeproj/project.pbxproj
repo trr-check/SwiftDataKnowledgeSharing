@@ -12,6 +12,9 @@
 		EDD5B6D02AF16B01009CE2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD5B6CF2AF16B01009CE2CC /* Assets.xcassets */; };
 		EDD5B6D32AF16B01009CE2CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD5B6D22AF16B01009CE2CC /* Preview Assets.xcassets */; };
 		EDD5B6DA2AF16B7D009CE2CC /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5B6D92AF16B7D009CE2CC /* Animal.swift */; };
+		EDDEEFF82AF93D6100CDE054 /* GlobalObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDEEFF72AF93D6100CDE054 /* GlobalObjects.swift */; };
+		EDDEEFFA2AF93D9A00CDE054 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDEEFF92AF93D9A00CDE054 /* Overlay.swift */; };
+		EDDEEFFC2AF93DBE00CDE054 /* DoSomethingWithDatabaseAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDEEFFB2AF93DBE00CDE054 /* DoSomethingWithDatabaseAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		EDD5B6CF2AF16B01009CE2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDD5B6D22AF16B01009CE2CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EDD5B6D92AF16B7D009CE2CC /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		EDDEEFF72AF93D6100CDE054 /* GlobalObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalObjects.swift; sourceTree = "<group>"; };
+		EDDEEFF92AF93D9A00CDE054 /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		EDDEEFFB2AF93DBE00CDE054 /* DoSomethingWithDatabaseAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoSomethingWithDatabaseAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			children = (
 				EDD5B6D92AF16B7D009CE2CC /* Animal.swift */,
 				EDD5B6CB2AF16AFF009CE2CC /* SwiftDataKnowledgeSharingApp.swift */,
+				EDDEEFF72AF93D6100CDE054 /* GlobalObjects.swift */,
 				EDD5B6CD2AF16AFF009CE2CC /* ContentView.swift */,
+				EDDEEFFB2AF93DBE00CDE054 /* DoSomethingWithDatabaseAction.swift */,
+				EDDEEFF92AF93D9A00CDE054 /* Overlay.swift */,
 				EDD5B6CF2AF16B01009CE2CC /* Assets.xcassets */,
 				EDD5B6D12AF16B01009CE2CC /* Preview Content */,
 			);
@@ -140,7 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDDEEFFC2AF93DBE00CDE054 /* DoSomethingWithDatabaseAction.swift in Sources */,
 				EDD5B6CE2AF16AFF009CE2CC /* ContentView.swift in Sources */,
+				EDDEEFF82AF93D6100CDE054 /* GlobalObjects.swift in Sources */,
+				EDDEEFFA2AF93D9A00CDE054 /* Overlay.swift in Sources */,
 				EDD5B6CC2AF16AFF009CE2CC /* SwiftDataKnowledgeSharingApp.swift in Sources */,
 				EDD5B6DA2AF16B7D009CE2CC /* Animal.swift in Sources */,
 			);
