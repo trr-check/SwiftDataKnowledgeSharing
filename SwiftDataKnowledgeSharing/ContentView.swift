@@ -2,7 +2,7 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Query(filter: #Predicate { animal in animal.age >= 20 }, sort: [SortDescriptor(\Animal.age)], animation: .bouncy) var allAnimals: [Animal]
+    @Query(filter: #Predicate<Animal> { animal in animal.happiness >= 0.02 }, animation: .bouncy) var allAnimals: [Animal]
     @Environment(\.modelContext) var modelContext
     
     var body: some View {

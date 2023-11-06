@@ -19,6 +19,19 @@ class Animal: Identifiable {
         uuid
     }
     
+    var happiness: Double {
+        switch type {
+        case .bird:
+            return 0.2
+        case .mammal:
+            return 1 / Double(age)
+        case .amphibian:
+            return 0.5 * exp(Double(age))
+        case .fish:
+            return 0.3 * log(Double(age))
+        }
+    }
+    
     static func randomAnimal() -> Animal {
         switch Int.random(in: 0..<4) {
         case 0:
