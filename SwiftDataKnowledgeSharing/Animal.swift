@@ -3,13 +3,15 @@ import SwiftData
 
 @Model
 class Animal: Identifiable {
-    let name: String
+    let firstname: String
+    let lastname: String
     let age: Int
     let type: AnimalType
     let uuid: String
     
-    init(name: String, age: Int, type: AnimalType, uuid: String = UUID().uuidString) {
-        self.name = name
+    init(firstname: String, lastname: String, age: Int, type: AnimalType, uuid: String = UUID().uuidString) {
+        self.firstname = firstname
+        self.lastname = lastname
         self.age = age
         self.type = type
         self.uuid = uuid
@@ -35,13 +37,13 @@ class Animal: Identifiable {
     static func randomAnimal() -> Animal {
         switch Int.random(in: 0..<4) {
         case 0:
-            return Animal(name: "Alice", age: Int.random(in: 1...100), type: .fish)
+            return Animal(firstname: "Alice", lastname: "", age: Int.random(in: 1...100), type: .fish)
         case 1:
-            return Animal(name: "Bob", age: Int.random(in: 1...100), type: .bird)
+            return Animal(firstname: "Bob", lastname: "", age: Int.random(in: 1...100), type: .bird)
         case 2:
-            return Animal(name: "Mallory", age: Int.random(in: 1...100), type: .mammal)
+            return Animal(firstname: "Mallory", lastname: "", age: Int.random(in: 1...100), type: .mammal)
         default:
-            return Animal(name: "foo", age: Int.random(in: 1...100), type: .amphibian)
+            return Animal(firstname: "foo", lastname: "", age: Int.random(in: 1...100), type: .amphibian)
         }
     }
 }
