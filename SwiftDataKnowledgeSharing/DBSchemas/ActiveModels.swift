@@ -1,1 +1,1 @@
-typealias Animal = DBSchemaV1.Animal
+typealias Animal = DBSchemaV2.Animal
