@@ -4,9 +4,10 @@ import SwiftData
 enum GlobalObjects {
     static let modelContainer: ModelContainer = {
         do {
+            let schema = Schema([Animal.self])
             let storeURL = URL.documentsDirectory.appending(path: "database.sqlite")
             let config = ModelConfiguration(url: storeURL)
-            return try ModelContainer(for: Animal.self, configurations: config)
+            return try ModelContainer(for: schema, configurations: config)
         } catch {
             fatalError("Failed to configure SwiftData container.")
         }

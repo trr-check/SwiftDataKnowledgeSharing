@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED4951872AFA62DA008EB92A /* DBSchemaV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4951862AFA62DA008EB92A /* DBSchemaV1.swift */; };
+		ED4951892AFA6306008EB92A /* ActiveModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4951882AFA6306008EB92A /* ActiveModels.swift */; };
 		EDD5B6CC2AF16AFF009CE2CC /* SwiftDataKnowledgeSharingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5B6CB2AF16AFF009CE2CC /* SwiftDataKnowledgeSharingApp.swift */; };
 		EDD5B6CE2AF16AFF009CE2CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5B6CD2AF16AFF009CE2CC /* ContentView.swift */; };
 		EDD5B6D02AF16B01009CE2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD5B6CF2AF16B01009CE2CC /* Assets.xcassets */; };
 		EDD5B6D32AF16B01009CE2CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD5B6D22AF16B01009CE2CC /* Preview Assets.xcassets */; };
-		EDD5B6DA2AF16B7D009CE2CC /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5B6D92AF16B7D009CE2CC /* Animal.swift */; };
 		EDDEEFF82AF93D6100CDE054 /* GlobalObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDEEFF72AF93D6100CDE054 /* GlobalObjects.swift */; };
 		EDDEEFFA2AF93D9A00CDE054 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDEEFF92AF93D9A00CDE054 /* Overlay.swift */; };
 		EDDEEFFC2AF93DBE00CDE054 /* DoSomethingWithDatabaseAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDEEFFB2AF93DBE00CDE054 /* DoSomethingWithDatabaseAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED4951862AFA62DA008EB92A /* DBSchemaV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSchemaV1.swift; sourceTree = "<group>"; };
+		ED4951882AFA6306008EB92A /* ActiveModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveModels.swift; sourceTree = "<group>"; };
 		EDD5B6C82AF16AFF009CE2CC /* SwiftDataKnowledgeSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataKnowledgeSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD5B6CB2AF16AFF009CE2CC /* SwiftDataKnowledgeSharingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataKnowledgeSharingApp.swift; sourceTree = "<group>"; };
 		EDD5B6CD2AF16AFF009CE2CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDD5B6CF2AF16B01009CE2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDD5B6D22AF16B01009CE2CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EDD5B6D92AF16B7D009CE2CC /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		EDDEEFF72AF93D6100CDE054 /* GlobalObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalObjects.swift; sourceTree = "<group>"; };
 		EDDEEFF92AF93D9A00CDE054 /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
 		EDDEEFFB2AF93DBE00CDE054 /* DoSomethingWithDatabaseAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoSomethingWithDatabaseAction.swift; sourceTree = "<group>"; };
@@ -40,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED4951852AFA62C8008EB92A /* DBSchemas */ = {
+			isa = PBXGroup;
+			children = (
+				ED4951862AFA62DA008EB92A /* DBSchemaV1.swift */,
+				ED4951882AFA6306008EB92A /* ActiveModels.swift */,
+			);
+			path = DBSchemas;
+			sourceTree = "<group>";
+		};
 		EDD5B6BF2AF16AFF009CE2CC = {
 			isa = PBXGroup;
 			children = (
@@ -59,7 +70,7 @@
 		EDD5B6CA2AF16AFF009CE2CC /* SwiftDataKnowledgeSharing */ = {
 			isa = PBXGroup;
 			children = (
-				EDD5B6D92AF16B7D009CE2CC /* Animal.swift */,
+				ED4951852AFA62C8008EB92A /* DBSchemas */,
 				EDD5B6CB2AF16AFF009CE2CC /* SwiftDataKnowledgeSharingApp.swift */,
 				EDDEEFF72AF93D6100CDE054 /* GlobalObjects.swift */,
 				EDD5B6CD2AF16AFF009CE2CC /* ContentView.swift */,
@@ -150,11 +161,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDDEEFFC2AF93DBE00CDE054 /* DoSomethingWithDatabaseAction.swift in Sources */,
+				ED4951872AFA62DA008EB92A /* DBSchemaV1.swift in Sources */,
 				EDD5B6CE2AF16AFF009CE2CC /* ContentView.swift in Sources */,
 				EDDEEFF82AF93D6100CDE054 /* GlobalObjects.swift in Sources */,
 				EDDEEFFA2AF93D9A00CDE054 /* Overlay.swift in Sources */,
+				ED4951892AFA6306008EB92A /* ActiveModels.swift in Sources */,
 				EDD5B6CC2AF16AFF009CE2CC /* SwiftDataKnowledgeSharingApp.swift in Sources */,
-				EDD5B6DA2AF16B7D009CE2CC /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
