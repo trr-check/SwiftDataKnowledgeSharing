@@ -11,6 +11,7 @@
 		ED4951892AFA6306008EB92A /* ActiveModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4951882AFA6306008EB92A /* ActiveModels.swift */; };
 		ED49518D2AFA6615008EB92A /* MigrationPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49518C2AFA6615008EB92A /* MigrationPlan.swift */; };
 		ED49518F2AFA6693008EB92A /* DBSchemaV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49518E2AFA6693008EB92A /* DBSchemaV2.swift */; };
+		ED4951932AFA7A34008EB92A /* DBSchemaV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4951922AFA7A34008EB92A /* DBSchemaV3.swift */; };
 		EDD5B6CC2AF16AFF009CE2CC /* SwiftDataKnowledgeSharingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5B6CB2AF16AFF009CE2CC /* SwiftDataKnowledgeSharingApp.swift */; };
 		EDD5B6CE2AF16AFF009CE2CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5B6CD2AF16AFF009CE2CC /* ContentView.swift */; };
 		EDD5B6D02AF16B01009CE2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD5B6CF2AF16B01009CE2CC /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		ED4951882AFA6306008EB92A /* ActiveModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveModels.swift; sourceTree = "<group>"; };
 		ED49518C2AFA6615008EB92A /* MigrationPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationPlan.swift; sourceTree = "<group>"; };
 		ED49518E2AFA6693008EB92A /* DBSchemaV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSchemaV2.swift; sourceTree = "<group>"; };
+		ED4951922AFA7A34008EB92A /* DBSchemaV3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSchemaV3.swift; sourceTree = "<group>"; };
 		EDD5B6C82AF16AFF009CE2CC /* SwiftDataKnowledgeSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataKnowledgeSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD5B6CB2AF16AFF009CE2CC /* SwiftDataKnowledgeSharingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataKnowledgeSharingApp.swift; sourceTree = "<group>"; };
 		EDD5B6CD2AF16AFF009CE2CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 				ED4951882AFA6306008EB92A /* ActiveModels.swift */,
 				ED49518C2AFA6615008EB92A /* MigrationPlan.swift */,
 				ED49518E2AFA6693008EB92A /* DBSchemaV2.swift */,
+				ED4951922AFA7A34008EB92A /* DBSchemaV3.swift */,
 			);
 			path = DBSchemas;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				EDDEEFFA2AF93D9A00CDE054 /* Overlay.swift in Sources */,
 				ED4951892AFA6306008EB92A /* ActiveModels.swift in Sources */,
 				EDD5B6CC2AF16AFF009CE2CC /* SwiftDataKnowledgeSharingApp.swift in Sources */,
+				ED4951932AFA7A34008EB92A /* DBSchemaV3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
