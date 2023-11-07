@@ -12,8 +12,7 @@ struct ContentView: View {
             List {
                 ForEach(allAnimals) { animal in
                     HStack {
-                        Text(animal.firstname)
-                        Text("\(animal.age)")
+                        Text(animal.subtitle)
                         Spacer()
                         Text(animal.type.localizedString)
                     }

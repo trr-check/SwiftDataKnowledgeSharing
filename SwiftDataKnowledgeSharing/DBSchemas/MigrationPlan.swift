@@ -28,6 +28,8 @@ enum MigrationPlan: SchemaMigrationPlan {
         }
     }
     
+    static var tempItems: [DBSchemaV3.Animal] = []
+    
     static var v2tov3: MigrationStage = .custom(
         fromVersion: DBSchemaV1.self,
         toVersion: DBSchemaV2.self,
@@ -35,11 +37,16 @@ enum MigrationPlan: SchemaMigrationPlan {
             let items = try context.fetch(FetchDescriptor<DBSchemaV2.Animal>())
             for item in items {
                 let newItem = DBSchemaV3.Animal(subtitle: "\(item.firstname) age: \(item.age)", type: migrateV2toV3AnimalType(animalType: item.type))
-                context.insert(newItem)
+                tempItems.append(newItem)
+                context.delete(item)
+            }
+        },
+        didMigrate: { context in
+            for item in tempItems {
+                context.insert(item)
             }
             
             try context.save()
-        },
-        didMigrate: nil
+        }
     )
 }

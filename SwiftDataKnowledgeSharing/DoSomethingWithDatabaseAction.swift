@@ -15,11 +15,7 @@ final class DoSomethingWithDatabaseAction {
     }
     
     func queryAndDeleteSomeItems() {
-        let filterPredicate = #Predicate<Animal> { animal in
-            animal.age >= 4
-        }
-        
-        let fetchDescriptor = FetchDescriptor<Animal>(predicate: filterPredicate)
+        let fetchDescriptor = FetchDescriptor<Animal>()
         
         do {
             let fetchedAnimals = try modelContext.fetch(fetchDescriptor)
